@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Expense Tracker</title>
+  <link rel="shortcut icon" href="./vecteezy_gk-logo-monogram-emblem-style-with-crown-shape-design-template_.jpg" type="image/x-icon">
+  <!--normalized css-->
+  <link rel="stylesheet" href="./normalize.css">
+  <!--custom css--> 
+  <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+  <div class="main">
+    <h1>Expense Tracker <i class="fa-solid fa-coins"></i></h1>
+  <!--balance-->
+  <div class="bank">
+    <div class="balance-container">
+        <p class="balance">YOUR BALANCE:</p>
+        <P class="balance-amt" id="balance">$0.00</P>
+    </div>
+
+  <!--output-->
+  <div class="output-container">
+
+    <div class="income-container">
+        <p class="income">INCOME:</p>
+        <P class="income-amt" id="income">$0.00</P>
+    </div>
+
+    <div class="expense-container">
+        <p class="expense">EXPENSE:</p>
+        <P class="expense-amt" id="expense">$0.00</P>
+    </div>
+  </div> 
+</div>
+<!--history-->
+  <div class="history-container">
+    <h2 class="history-title">History</h2>
+    <div class="history-title">
+      <ul class="lists" id="lists">
+        <li class="minus">
+          <span>Cash</span><span>-500</span>
+          <button class="delete-btn btn">X</button>
+        </li>
+
+        <li class="plus">
+          <span>Cash</span><span>1000</span>
+          <button class="delete-btn btn">X</button>
+        </li>
+      </ul>
+    </div>
+  </div>
+  <!--form input container-->
+  <h2 class="heading" >Add New Transaction</h2>
+  <form class="input-container" id="form">
+    <label class="transaction" for="transaction">Transaction</label>
+    <input type="text" id="transaction" class="transaction" placeholder="Enter Transaction">
+    <label for="input-amount">Amount (Negative-Expense, Positive-Income)</label>
+    <input type="text" id="input-amount" class="input-amount" placeholder="Enter Amount">
+    <button class="button" id="btn">Add Transaction</button>
+  </form>
+  <button class="rest">Restart</button>
+</div>
+  <!--custom script-->
+  <script src="./script.js"></script>
+</body>
+</html>
